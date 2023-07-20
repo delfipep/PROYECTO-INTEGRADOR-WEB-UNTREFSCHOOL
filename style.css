@@ -1,0 +1,663 @@
+:root{--main-color: #ffc800;
+}
+
+
+* {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;}
+a:visited{
+color:black
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h2{
+  font-size: 44px;
+  font-weight: 700;
+}
+nav {
+  padding: 30px 0;
+  background-color: var(--main-color);
+  border-bottom: solid;
+}
+
+.menu ul {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0;
+}
+
+
+.hero {
+  height: 400px;
+  background-image: url(./img/fondo6.jpg);
+  background-size: cover;
+  
+  filter: contrast(1.1);
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 30px var(--main-color);
+}
+
+
+
+
+h1 {
+    font-family: 'Concert One', cursive;
+  text-transform: uppercase;
+  position: absolute;
+  left: 10vw;
+  margin: 150px 0 0 0 ;
+  
+  font-size: 6.5rem;
+  font-weight: 500;
+  line-height: .8;
+  padding: 5px;
+  
+}
+h1 span {
+    font-family: 'Concert One', cursive;
+    color: rgb(255, 255, 255);
+}
+
+.quienes-somos {
+  width: 80vw;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.quienes-somos h2 {
+  margin-top: 30px;
+  text-align: left;
+}
+
+
+.info-quienes-somos {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px auto;
+}
+
+.info-quienes-somos img {
+  transform: rotate(-3deg);
+  height: 294px;
+  border: solid 3px var(--main-color);
+  border-radius: 10px;
+  margin-right: 60px;
+  margin-top: 20px;
+}
+
+.info-quienes-somos p {
+  max-width: 500px;
+  font-size: 20px;
+}
+
+.elegirnos {
+  width: 100%;
+  margin: auto;
+  background-color: var(--main-color);
+padding: 20px 0
+}
+
+.elegirnos h2 {
+  margin: 20px 0 0 10vw;
+  text-align: left;
+}
+
+.porque-elegirnos {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto;
+  flex-direction: row-reverse;
+}
+
+.porque-elegirnos img {
+  height: 320px;
+  transform: rotate(3deg);
+  border-radius: 10px;
+  border: solid 3px var(--main-color);
+  margin-left: 60px;
+}
+
+.porque-elegirnos p {
+  max-width: 500px;
+  text-align: right;
+  font-size: 20px;
+}
+
+.propuestas {
+  width: 80vw;
+  margin: 50px auto 100px auto;
+  height: 500px;
+}
+.cartas-propuestas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.carta {
+  margin: 0;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: hsl(44, 100%, 83%);
+  box-shadow: 0 10px 10px rgb(226, 226, 226);
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+.carta p {
+  margin-top: 30px;
+  width: 220px;
+  text-align: justify;
+}
+
+.propuestas h2 {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.perfil {
+   
+  max-width: 200px;
+  border-radius: 5px;
+ 
+}
+
+.noticias {
+  width: 80vw;
+  margin: 100px auto;
+}
+
+.noticias h2 {
+  margin: 30px 0;
+  text-align: left;
+}
+
+.texto-noticias {
+  display: flex;
+}
+.texto-noticias p {
+  width: 370px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.noticias p strong {
+  text-transform: uppercase;
+}
+
+footer {
+  padding: 20px 0;
+  margin: auto;
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+.info-final {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 20px 20px 20px;
+}
+
+
+.redes ul li {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+
+.location h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.map iframe {
+    width: 400px;
+    height: 170px;
+   
+}
+
+.contacto ul li {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.contacto ul {
+  padding: 0
+}
+
+.redes ul {
+  padding: 0
+}
+
+
+/*/////////////////// MEDIA_QUERY ///////////////////*/
+
+@media all and (max-width: 649px) {
+  h1{
+    font-size: 84px;
+    font-weight: 700;
+    text-align: center;
+    position: initial;
+    left: 0
+  }
+  nav {
+    padding: 30px 0;
+    background-color: var(--main-color);
+    border-bottom: solid;
+  }
+  
+  .menu ul {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .menu ul li{
+    margin-top: 10px;
+  }
+
+  .hero {
+    height: 400px;
+    background-image: url(./img/fondo6.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    filter: contrast(1.1);
+    border-bottom: solid 30px var(--main-color);
+  }
+  
+  /* ////////////// QUIENES_SOMOS ////////////// */
+
+  .quienes-somos {
+    width: 94vw;
+    margin: auto;
+    padding: 30px 0;
+  }
+  
+  .quienes-somos h2 {
+    margin: 20px 0 0 auto;
+    text-align: center;
+    line-height: 40px;
+    }
+  
+  .info-quienes-somos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px auto;
+  }
+  
+  .info-quienes-somos img {
+    transform: rotate(-3deg);
+    border: solid 3px var(--main-color);
+    border-radius: 10px;
+    margin: 20px 20px 40px 20px;
+    width: 86vw;
+  }
+  
+  .info-quienes-somos p {
+    max-width: 90vw;
+    text-align: center;
+  }
+  
+  
+  /* //////////////////ELEGIRNOS////////////////// */
+  
+  .elegirnos {
+    width: 100%;
+    margin: auto;
+    background-color: var(--main-color);
+padding: 20px 0
+}
+
+.elegirnos h2 {
+  margin: 50px 0 30px 0;
+  text-align: center;
+  line-height: 40px;
+}
+
+.porque-elegirnos {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 40px auto;
+}
+
+.porque-elegirnos img {
+  height: 230px;
+  transform: rotate(3deg);
+  border-radius: 10px;
+  border: solid 3px var(--main-color);
+  margin-left: 0;
+}
+
+.porque-elegirnos p {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+
+
+/* //////////////////PROPUESTAS////////////////// */
+
+.propuestas {
+  width: 80vw;
+  margin: 50px auto 100px auto;
+  height: auto;
+}
+.cartas-propuestas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.carta {
+  margin: 20px 0;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+  background-color: hsl(44, 100%, 83%);
+  box-shadow: 0 10px 10px rgb(226, 226, 226);
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+.carta p {
+  margin-top: 30px;
+  width: 220px;
+  text-align: justify;
+}
+
+.propuestas h2 {
+  margin: 80px 0 30px 0;
+  text-align: center;
+  line-height: 40px;
+}
+
+.perfil {
+   
+  max-width: 200px;
+  border-radius: 5px;
+  /* border: solid #f3f3f3 5px; */
+}
+
+
+
+
+
+/* //////////////////NOTICIAS////////////////// */
+
+.noticias {
+  width: 94vw;
+  margin: auto;
+}
+
+.noticias h2 {
+  margin: 20px 0 30px 0;
+  text-align: center;
+  line-height: 40px;
+}
+
+.texto-noticias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.texto-noticias p {
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+}
+
+.noticias p strong {
+  text-transform: uppercase;
+}
+
+
+
+/* //////////////////FOOTER////////////////// */
+footer {
+  padding: 20px 0;
+  margin: auto;
+  width: 100%;
+  background-color: var(--main-color);
+  text-align: center;
+}
+
+.info-final {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 40px 20px 20px 20px;
+  height: 700px;
+}
+.info-final h3 {
+  font-size: 26px;
+
+}
+
+
+.redes ul li {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+
+.location h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.map iframe {
+  width: 87vw;
+  height: 170px;
+  /* background-image: url(./img/Sin\ título.jpg);
+  background-size: cover; */
+}
+
+.contacto ul li {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.contacto ul {
+  padding: 0
+}
+
+.redes ul {
+  padding: 0
+}
+
+
+}
+
+@media all and (min-width: 650px) and (max-width: 1024px) {
+ 
+  .info-quienes-somos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px auto;
+  }
+     
+  .info-quienes-somos img {
+    transform: rotate(-3deg);
+    border: solid 3px var(--main-color);
+    border-radius: 10px;
+    margin: 20px 20px 40px 20px;
+    width: 500px;
+  }
+  
+  .porque-elegirnos {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 40px auto;
+    align-items: center;
+  }
+
+  .porque-elegirnos img {
+    height: 240px;
+    width: 500px;
+    transform: rotate(3deg);
+    border-radius: 10px;
+    border: solid 3px var(--main-color);
+    margin-left: 0;
+    margin-bottom: 35px;
+  }
+
+  .propuestas {
+    width: 80vw;
+    margin: 50px auto 100px auto;
+    height: auto;
+  }
+  .cartas-propuestas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+  .carta {
+    max-width: 70vw;
+    margin: 20px 0;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: hsl(44, 100%, 83%);
+    box-shadow: 0 10px 10px rgb(226, 226, 226);
+    padding: 30px 50px;
+    border-radius: 10px;
+  }
+  .carta p {
+    margin-left: 30px;
+    width: 400px;
+    text-align: justify;
+  }
+  
+  .propuestas h2 {
+    margin: 80px 0 30px 0;
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  .perfil {
+     
+    max-width: 200px;
+    border-radius: 5px;
+    /* border: solid #f3f3f3 5px; */
+  }
+  .noticias h2 {
+    margin: 20px 0 60px 0;
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  .texto-noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 80px;
+  }
+  .texto-noticias p {
+    width: 90vw;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  footer {
+    padding: 20px 0;
+    margin: auto;
+    width: 100%;
+    background-color: var(--main-color);
+    text-align: center;
+  }
+  
+  .info-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px 20px 20px 20px;
+    height: 700px;
+  }
+  .info-final h3 {
+    font-size: 26px;
+  
+  
+  }
+  
+  
+  .redes ul li {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  .location h3 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  
+  .map iframe {
+    width: 400px;
+    height: 240px;
+    /* background-image: url(./img/Sin\ título.jpg);
+    background-size: cover; */
+  }
+  
+  .contacto ul li {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .contacto ul {
+    padding: 0
+  }
+  
+  .redes ul {
+    padding: 0
+  }
+  
+
+  
+  
+}

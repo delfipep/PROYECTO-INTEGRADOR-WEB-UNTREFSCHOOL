@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="formulario">
+
+      <div class="titulos">
+        <h1>Untref School</h1>
+        <h2>Complete el formulario</h2>
+      </div>
+
+      
+        <form action="https://formspree.io/f/mgejvkko" method="POST">
+        <div class="info-contacto">
+          <input placeholder="Nombre" type="text" id="nombre" name="nombre" required /><br /><br />
+
+          <input placeholder="Apellido"
+            type="text"
+            id="apellido"
+            name="apellido"
+            required
+          /><br /><br />
+
+          <input placeholder="Email" name="Email" id="email" type="email" required /><br /><br />
+
+          <input placeholder="Teléfono"
+            type="tel"
+            id="telefono"
+            name="telefono"
+            required
+          /><br /><br />
+        </div>
+        <div class="consultas">
+          <label for="consulta">Escriba su consulta:</label><br />
+          <textarea
+            id="consulta"
+            name="consulta"
+            rows="4"
+            cols="50"
+            required
+          ></textarea
+          ><br /><br />
+        </div>
+         <div class="botones">
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Resetear" />
+         </div>
+        </form>
+   
+    </section>
+
+      <section class="volver">
+        <button>
+        <a href="#" onclick="history.go(-1);">Volver</a>
+    </button>  
+    </section>
+    </main>
+  </body>
+</html>
