@@ -7,6 +7,9 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Nunito', sans-serif;}
+  a{
+    color: black;
+  }
 a:visited{
 color:black
 }
